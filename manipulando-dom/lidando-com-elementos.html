@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Curso Javascript</title>
+</head>
+
+<body>
+    <div id="app">
+       
+    </div>
+    <script>
+        
+        var linkElement = document.createElement('a');
+        
+        linkElement.setAttribute('href','http://google.com/');
+        linkElement.setAttribute('title','Google');
+
+        var textElement = document.createTextNode('Acessar site da google.');
+        linkElement.appendChild(textElement);
+
+        var containerElement = document.querySelector('#app');
+
+        containerElement.appendChild(linkElement);
+        
+    </script>
+</body>
